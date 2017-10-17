@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Project 1 - Mockup Portfolio Design</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Collapsible Bootstrap Sidebar</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p>Heading Placeholder</p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <a>
+                    <img src="Colors.jpg" style="max-width:100%; padding-left:45px" alt="Colors">
+                </a>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-2" style="padding: 5px;">
+                                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                    <i class="glyphicon glyphicon-align-left"></i>
+                                    <span style="font-size: 70%">Toggle Sidebar</span>
+                                </button>
+                            </div>
+
+                            <div class="col-sm-4" style="padding: 20px">
+                                <a href="udacity-logo.jpg">
+                                    <img src="udacity-logo.jpg" style="max-width:25%;" alt="Udacity Logo">
+                                </a>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <p style="font-size:250%; text-align: right;">REEV EDD</p>
+                                <p style="text-align:right;">FRONT-END NINJA</p>  
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <hr style="height:3px;background-color: #7d97ad;">
+
+                <div class="container-fluid">                    
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a>
+                                <img src="Meta.jpg" style="min-width:100%;" alt="Meta Tag">
+                            </a>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p style="font-size: 250%; font-family: Arial">Beautiful Birds</p>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6" style="height: 350px">
+                            <a>
+                                <img src="Parrots.jpg" style="max-height:89%;margin:10px 10px 0px 10px" alt="Parrots">
+                            </a>
+                            <p style="text-align: center;">Parrots</p>     
+                        </div>
+                        <div class="col-sm-3" style="height: 350px">
+                            <a>
+                                <img src="Cardinals.jpg" style="max-height:89%;margin:10px 10px 0px 55px" alt="Cardinals">
+                            </a>
+                            <p style="text-align: center;">Cardinals</p>       
+                        </div>
+                        <div class="col-sm-3" style="height: 350px">
+                            <a>
+                                <img src="Food Fight.jpg" style="max-height:89%;min-width: 99%%;margin:10px 10px 0px 26px" alt="Food Fight">
+                            </a>
+                            <p style="text-align: center;">Food Fight!</p>       
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>The switchable sidebar in this project is based on the example at <a href="https://bootstrapious.com/p/bootstrap-sidebar">https://bootstrapious.com/p/bootstrap-sidebar</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>
