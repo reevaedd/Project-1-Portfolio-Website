@@ -1,0 +1,102 @@
+/*
+    GENERAL STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background:#ffffff;
+}
+
+.row div img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+.container{
+    margin-top:10px;
+}
+
+#Mada{
+    height:190px;
+    width:auto;
+}
+
+#MadaCol{
+    height:272px;
+    margin-top:5px;
+}
+
+#line{
+    background-color:#7d97ad;
+    height:4px;
+    margin-top:5px;
+}
+
+#MadaThumb{
+    margin-top:35px;
+}
+
+#PanoCol{
+    margin-top:5px;
+}
+
+#HeaderName{
+    text-align:right;
+}
+
+#HeaderLogo{
+    width:100px;
+    height:100px;
+}
+
+#MyName{
+    margin-right:30px;
+}
+
+[id^="MadaPic"]{
+    height:200px;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color:Gainsboro;
+}
+
+.row .thumbnail img{
+    height:150px;
+    width:auto;
+}
+
+.row .thumbnail h4{
+    text-align: center;
+}
+
+#info{
+    clear:both;
+    background-color:beige;
+    margin-top:10px;
+    padding-bottom:10px;
+}
+
+[id^="Plant"]{
+    margin-left:35px;
+}
+
+[id^="para"]{
+    display:inline;
+}
+
+footer{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: black;
+    clear:both;
+}
